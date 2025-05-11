@@ -76,6 +76,7 @@ let highest = Number(document.querySelector('.highscore').textContent);
 document.querySelector('.btn.again').addEventListener('click', function () {
   secret_number = Math.trunc(Math.random() * 20) + 1;
   //document.querySelector('.number').textContent = secret_number;
+  document.querySelector('.message').textContent = "Start guessing...";
   score = 20;
   document.querySelector('.score').textContent = score;
   document.querySelector('body').style.backgroundColor = '#222'; //background color as string
